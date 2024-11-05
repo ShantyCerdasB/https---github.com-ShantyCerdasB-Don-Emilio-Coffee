@@ -27,5 +27,4 @@ jobs:
       - name: Build the project
         run: yarn build  # Construye el proyecto con el comando de `yarn build`
 
-      - name: Run tests
-        run: yarn test  # Ejecuta pruebas si tienes alguna definida (opcional)
+

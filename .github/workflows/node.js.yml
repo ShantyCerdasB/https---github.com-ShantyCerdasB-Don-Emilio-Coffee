@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -22,7 +22,7 @@ jobs:
           cache: 'yarn'  # Usa cache para yarn
 
       - name: Install dependencies
-        run: yarn install  # Usa `yarn install` para instalar dependencias
+        run: yarn install
 
       - name: Build the project
-        run: yarn build  # Construye el proyecto con el comando de `yarn build`
+        run: yarn build  # Asegúrate de que este script existe en package.json

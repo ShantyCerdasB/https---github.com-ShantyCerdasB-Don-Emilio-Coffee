@@ -6,11 +6,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x]  # Versiones de Node recomendadas
+        node-version: [20.x]  # Versiones de Node recomendadas
 
     steps:
       - uses: actions/checkout@v4
